@@ -1,6 +1,8 @@
 name: Deploy
 
 on:
+  schedule:
+    - cron: '0 5 * * *'
   push:
     branches:
       - master
@@ -21,6 +23,9 @@ jobs:
 
       - uses: bahmutov/npm-install@v1
 
+      - name: Run Jigsaw
+        run: ./vendor/bin/jigsaw build production
+
       - name: Laravel Mix
         run: npm run prod
 
@@ -28,3 +33,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages publish --project-name=gtld-fyi ./build_production
