@@ -23,11 +23,11 @@ jobs:
 
       - uses: bahmutov/npm-install@v1
 
-      - name: Run Jigsaw
-        run: ./vendor/bin/jigsaw build production
-
       - name: Laravel Mix
         run: npm run prod
+
+      - name: Run Jigsaw
+        run: ./vendor/bin/jigsaw build production
 
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
