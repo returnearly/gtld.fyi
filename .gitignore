@@ -1,0 +1,8 @@
+/build_*/
+/node_modules/
+/vendor/
+/source/assets/build/
+/.idea/
+.env
+npm-debug.log
+.DS_Store

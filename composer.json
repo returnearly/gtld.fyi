@@ -1,0 +1,23 @@
+{
+    "name": "returnearly/gtld.fyi",
+    "description": "The source for gTLD.fyi, a website to inform companies that their signup forms don't support gTLD domains for user accounts.",
+    "type": "project",
+    "require": {
+        "tightenco/jigsaw": "^1.6",
+        "tightenco/jigsaw-docs-template": "^1.1",
+        "samdark/sitemap": "^2.2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ReturnEarly\\GTLDfyi\\": "source/",
+            "App\\Listeners\\": "listeners/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom Schlick",
+            "email": "tom@returnearly.net"
+        }
+    ]
+}
