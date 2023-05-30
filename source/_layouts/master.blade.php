@@ -37,6 +37,8 @@
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         @endif
+        
+        <script src="https://cdn.usefathom.com/script.js" data-site="SNGKFKWH" defer></script>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
