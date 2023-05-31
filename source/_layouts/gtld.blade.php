@@ -34,7 +34,7 @@
 
             <h2>How to fix the problem?</h2>
             <p>
-                To fix the problem, your technical team will need to update your application to allow email addresses with the <code>.{{ $page->name }}</code> extension. This should be a fairly straightforward change to your validation logic that will allow your customers to use your service with their preferred email address.
+                To fix the problem, your technical team will need to update your application to allow email addresses with the <code>.{{ $page->name }}</code> TLD along with <a href="/all">the other {{ number_format($gtlds->count() - 1) }} TLDs</a>. This should be a fairly straightforward change to your validation logic that will allow your customers to use your service with their preferred email address.
             </p>
 
             <p>
@@ -45,7 +45,7 @@
                 </ul>
             </p>
 
-
+            <h3>Methods for Email Validation</h3>
 
             <code>
                 \A(?:[a-z0-9!#$%&'*+/=?^_‘{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_‘{|}~-]+)*
