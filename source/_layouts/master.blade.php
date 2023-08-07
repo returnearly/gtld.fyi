@@ -28,7 +28,7 @@
         @stack('meta')
 
         @if ($page->production)
-            <!-- Insert analytics code here -->
+            <script src="https://cdn.usefathom.com/script.js" data-site="SNGKFKWH" defer></script>
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
@@ -37,8 +37,6 @@
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         @endif
-        
-        <script src="https://cdn.usefathom.com/script.js" data-site="SNGKFKWH" defer></script>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
