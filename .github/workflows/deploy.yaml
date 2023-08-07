@@ -28,6 +28,9 @@ jobs:
 
       - name: Run Jigsaw
         run: ./vendor/bin/jigsaw build production
+        with:
+          DOCSEARCH_INDEX: ${{ secrets.DOCSEARCH_INDEX }}
+          DOCSEARCH_KEY: ${{ secrets.DOCSEARCH_KEY }}
 
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
