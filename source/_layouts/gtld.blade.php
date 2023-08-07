@@ -39,25 +39,51 @@
 
             <p>
                 Usually, the problem is due to one of these few reasons:
-                <ul class="list list-disc list-inside">
-                    <li class="py-2">Your application is coded to only allow a specific whitelist of TLDs and that list only includes 5-10 of the most popular like .com, .net, .org, etc</li>
-                    <li class="py-2">Your application is using a poorly formatted regular expression that is limiting the length of the TLD section to something arbitrary like 4 characters.</li>
-                </ul>
             </p>
+            <ul class="list list-disc list-inside">
+                <li class="py-2">
+                    Your application is coded to only allow a specific whitelist of TLDs and that list only includes 5-10 of the most popular like .com, .net, .org, etc
+                </li>
+                <li class="py-2">
+                    Your application is using a poorly formatted regular expression that is limiting the length of the TLD section to something arbitrary like 4 characters.
+                </li>
+            </ul>
 
             <h3>Methods for Email Validation</h3>
 
-            <code>
-                \A(?:[a-z0-9!#$%&'*+/=?^_‘{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_‘{|}~-]+)*
-                |  "(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]
-                |  \\[\x01-\x09\x0b\x0c\x0e-\x7f])*")
-                @ (?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?
-                |  \[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}
-                (?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:
-                (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]
-                |  \\[\x01-\x09\x0b\x0c\x0e-\x7f])+)
-                \])\z
-            </code>
+            <h4>DNS Validation</h4>
+            <p>
+                The most reliable way to validate an email address is to check if the domain name has a valid MX record. If the domain name does not have a valid MX record, then the email address is not valid as no mail could be delivered without one.
+            </p>
+
+            <h4>Language Specific Helpers</h4>
+            <p>
+                Many languages have built-in methods for validating email addresses. These methods are usually the best way to validate email addresses as they are maintained by the core developers of the language and are kept up to date with the latest standards.
+            </p>
+            <ul class="list list-disc list-inside">
+                <li class="py-2">
+                    With HTML, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email" target="_blank"><code>type="email"</code></a> attribute on the <code>&lt;input&gt;</code> element to validate an email address on your website front-end.
+                </li>
+                <li class="py-2">
+                    In PHP, you can use the <a href="https://www.php.net/manual/en/function.filter-var.php" target="_blank"><code>filter_var()</code></a> method with the <code>FILTER_VALIDATE_EMAIL</code> filter to validate an email address.
+                </li>
+                <li class="py-2">
+                    In Ruby, you can use the built in <code>URI::MailTo::EMAIL_REGEXP</code> regular expression to validate an email address.
+                </li>
+                <li class="py-2">
+                    In Python, you can use <a href="https://docs.python.org/3/library/email.utils.html#email.utils.parseaddr" target="_blank">the built in <code>email.utils.parseaddr()</code> method</a> to validate an email address.
+                </li>
+                <li class="py-2">
+                    In JavaScript, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" target="_blank"><code>RegExp</code></a> object to validate an email address.
+                </li>
+            </ul>
+
+            <h4>Framework Specific Helpers</h4>
+            <ul class="list list-inside list-disc">
+                <li class="py-2">
+                    In Laravel, you can use the <a href="https://laravel.com/docs/master/validation#rule-email" target="_blank"><code>email</code></a> validation rule to validate an email address.
+                </li>
+            </ul>
         </div>
     </div>
 </section>
