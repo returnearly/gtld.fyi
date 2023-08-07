@@ -3,6 +3,8 @@
 /vendor/
 /source/assets/build/
 /.idea/
+/cache
+/source/_gtlds/_tmp/
 .env
 npm-debug.log
 .DS_Store
