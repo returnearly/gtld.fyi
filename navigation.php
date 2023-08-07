@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'Home' => '/',
+    'About' => '/about',
+    'All TLD Extensions' => '/all',
     'Getting Started' => [
         'url' => 'docs/getting-started',
         'children' => [
@@ -10,5 +13,5 @@ return [
             'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
-    'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
+    'Edit on Github' => 'https://github.com/returnearly/gtld.fyi/',
 ];
