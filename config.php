@@ -44,6 +44,7 @@ return [
                         return [
                             'name' => $gtld,
                             'iana_db_url' => "https://www.iana.org/domains/root/db/" . strtolower($gtld) . ".html",
+                            'github_edit_url' => "https://github.com/returnearly/gtld.fyi/blob/master/source/_layouts/gtld.blade.php",
                         ];
                     });
             }
