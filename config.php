@@ -6,7 +6,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'gTLD.fyi',
-    'siteDescription' => 'Beautiful docs powered by Jigsaw',
+    'siteDescription' => 'Help applications fix their broken email validation.',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
