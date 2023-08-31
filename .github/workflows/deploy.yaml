@@ -33,7 +33,7 @@ jobs:
           DOCSEARCH_KEY: ${{ secrets.DOCSEARCH_KEY }}
 
       - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3.1.1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
