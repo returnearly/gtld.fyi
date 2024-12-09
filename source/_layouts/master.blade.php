@@ -29,6 +29,9 @@
 
         @if ($page->production)
             <script src="https://cdn.usefathom.com/script.js" data-site="SNGKFKWH" defer></script>
+
+            <script defer data-domain="gtld.fyi" src="https://pa.returnearly.net/js/script.outbound-links.js"></script>
+            <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
