@@ -28,8 +28,6 @@
         @stack('meta')
 
         @if ($page->production)
-            <script src="https://cdn.usefathom.com/script.js" data-site="SNGKFKWH" defer></script>
-
             <script defer data-domain="gtld.fyi" src="https://pa.returnearly.net/js/script.outbound-links.js"></script>
             <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
         @endif
