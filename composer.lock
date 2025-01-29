@@ -1347,16 +1347,16 @@
         },
         {
             "name": "mnapoli/front-yaml",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mnapoli/FrontYAML.git",
-                "reference": "d42d84159f3725d50f7bda953ed90185b3c41cc4"
+                "reference": "06e43e7720f8fdd140c24de882416c4bfc1aaabd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mnapoli/FrontYAML/zipball/d42d84159f3725d50f7bda953ed90185b3c41cc4",
-                "reference": "d42d84159f3725d50f7bda953ed90185b3c41cc4",
+                "url": "https://api.github.com/repos/mnapoli/FrontYAML/zipball/06e43e7720f8fdd140c24de882416c4bfc1aaabd",
+                "reference": "06e43e7720f8fdd140c24de882416c4bfc1aaabd",
                 "shasum": ""
             },
             "require": {
@@ -1378,9 +1378,9 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/mnapoli/FrontYAML/tree/2.0.3"
+                "source": "https://github.com/mnapoli/FrontYAML/tree/2.0.4"
             },
-            "time": "2024-02-07T14:42:22+00:00"
+            "time": "2025-01-29T09:02:26+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -4168,16 +4168,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.2.0",
+            "version": "v7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "099581e99f557e9f16b43c5916c26380b54abb22"
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/099581e99f557e9f16b43c5916c26380b54abb22",
-                "reference": "099581e99f557e9f16b43c5916c26380b54abb22",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac238f173df0c9c1120f862d0f599e17535a87ec",
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec",
                 "shasum": ""
             },
             "require": {
@@ -4220,7 +4220,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.2.0"
+                "source": "https://github.com/symfony/yaml/tree/v7.2.3"
             },
             "funding": [
                 {
@@ -4236,7 +4236,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-23T06:56:12+00:00"
+            "time": "2025-01-07T12:55:42+00:00"
         },
         {
             "name": "tightenco/jigsaw",
