@@ -531,7 +531,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v11.41.0",
+            "version": "v11.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -751,7 +751,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v11.41.0",
+            "version": "v11.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -989,7 +989,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v11.41.0",
+            "version": "v11.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
