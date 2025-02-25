@@ -2823,16 +2823,16 @@
         },
         {
             "name": "symfony/error-handler",
-            "version": "v7.2.1",
+            "version": "v7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "6150b89186573046167796fa5f3f76601d5145f8"
+                "reference": "959a74d044a6db21f4caa6d695648dcb5584cb49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/6150b89186573046167796fa5f3f76601d5145f8",
-                "reference": "6150b89186573046167796fa5f3f76601d5145f8",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/959a74d044a6db21f4caa6d695648dcb5584cb49",
+                "reference": "959a74d044a6db21f4caa6d695648dcb5584cb49",
                 "shasum": ""
             },
             "require": {
@@ -2878,7 +2878,7 @@
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/error-handler/tree/v7.2.1"
+                "source": "https://github.com/symfony/error-handler/tree/v7.2.3"
             },
             "funding": [
                 {
@@ -2894,7 +2894,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-07T08:50:44+00:00"
+            "time": "2025-01-07T09:39:55+00:00"
         },
         {
             "name": "symfony/finder",
