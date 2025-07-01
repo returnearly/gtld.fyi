@@ -2966,16 +2966,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v7.3.0",
+            "version": "v7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "4236baf01609667d53b20371486228231eb135fd"
+                "reference": "23dd60256610c86a3414575b70c596e5deff6ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/4236baf01609667d53b20371486228231eb135fd",
-                "reference": "4236baf01609667d53b20371486228231eb135fd",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/23dd60256610c86a3414575b70c596e5deff6ed9",
+                "reference": "23dd60256610c86a3414575b70c596e5deff6ed9",
                 "shasum": ""
             },
             "require": {
@@ -3025,7 +3025,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v7.3.0"
+                "source": "https://github.com/symfony/http-foundation/tree/v7.3.1"
             },
             "funding": [
                 {
@@ -3041,7 +3041,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-12T14:48:23+00:00"
+            "time": "2025-06-23T15:07:14+00:00"
         },
         {
             "name": "symfony/mime",
@@ -4248,16 +4248,16 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.8.0",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/jigsaw.git",
-                "reference": "e671cdad3e850f370fca28cfd4f514e6910be60f"
+                "reference": "8c6e969ef70887efc5a76630269c8fd713ca5669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/e671cdad3e850f370fca28cfd4f514e6910be60f",
-                "reference": "e671cdad3e850f370fca28cfd4f514e6910be60f",
+                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/8c6e969ef70887efc5a76630269c8fd713ca5669",
+                "reference": "8c6e969ef70887efc5a76630269c8fd713ca5669",
                 "shasum": ""
             },
             "require": {
@@ -4326,9 +4326,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/jigsaw/issues",
-                "source": "https://github.com/tighten/jigsaw/tree/v1.8.0"
+                "source": "https://github.com/tighten/jigsaw/tree/v1.8.1"
             },
-            "time": "2025-06-03T15:14:07+00:00"
+            "time": "2025-06-30T13:37:38+00:00"
         },
         {
             "name": "tightenco/jigsaw-docs-template",
