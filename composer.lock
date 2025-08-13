@@ -597,16 +597,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v12.22.1",
+            "version": "v12.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "14864194c13703df0f9b90baf5b886dce9c2055c"
+                "reference": "a66f14174c15a14b645089c537b895217942e017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/14864194c13703df0f9b90baf5b886dce9c2055c",
-                "reference": "14864194c13703df0f9b90baf5b886dce9c2055c",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/a66f14174c15a14b645089c537b895217942e017",
+                "reference": "a66f14174c15a14b645089c537b895217942e017",
                 "shasum": ""
             },
             "require": {
@@ -644,11 +644,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-08-03T15:10:34+00:00"
+            "time": "2025-08-12T13:56:11+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v12.22.1",
+            "version": "v12.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
