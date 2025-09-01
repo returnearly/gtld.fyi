@@ -533,16 +533,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v12.26.2",
+            "version": "v12.26.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "488d00c42725ce0f6044a20961f24091ac2af6a3"
+                "reference": "8becd6ef9a2e18a3186d555f36aa363b869d57da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/488d00c42725ce0f6044a20961f24091ac2af6a3",
-                "reference": "488d00c42725ce0f6044a20961f24091ac2af6a3",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/8becd6ef9a2e18a3186d555f36aa363b869d57da",
+                "reference": "8becd6ef9a2e18a3186d555f36aa363b869d57da",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +556,7 @@
                 "nunomaduro/termwind": "^2.0",
                 "php": "^8.2",
                 "symfony/console": "^7.2.0",
-                "symfony/polyfill-php83": "^1.31",
+                "symfony/polyfill-php83": "^1.33",
                 "symfony/process": "^7.2.0"
             },
             "suggest": {
@@ -595,7 +595,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-08-22T14:07:03+00:00"
+            "time": "2025-08-27T13:44:45+00:00"
         },
         {
             "name": "illuminate/container",
@@ -2685,16 +2685,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.3.2",
+            "version": "v7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5f360ebc65c55265a74d23d7fe27f957870158a1"
+                "reference": "cb0102a1c5ac3807cf3fdf8bea96007df7fdbea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5f360ebc65c55265a74d23d7fe27f957870158a1",
-                "reference": "5f360ebc65c55265a74d23d7fe27f957870158a1",
+                "url": "https://api.github.com/repos/symfony/console/zipball/cb0102a1c5ac3807cf3fdf8bea96007df7fdbea7",
+                "reference": "cb0102a1c5ac3807cf3fdf8bea96007df7fdbea7",
                 "shasum": ""
             },
             "require": {
@@ -2759,7 +2759,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.3.2"
+                "source": "https://github.com/symfony/console/tree/v7.3.3"
             },
             "funding": [
                 {
@@ -2779,7 +2779,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-30T17:13:41+00:00"
+            "time": "2025-08-25T06:35:40+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
