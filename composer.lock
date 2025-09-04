@@ -375,16 +375,16 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v12.26.4",
+            "version": "v12.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "774ff2a22a93643d94bae8aad74fdc39a8c7084c"
+                "reference": "951f82065e6b54f3867cfdcf0cb679e2fc0e0f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/774ff2a22a93643d94bae8aad74fdc39a8c7084c",
-                "reference": "774ff2a22a93643d94bae8aad74fdc39a8c7084c",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/951f82065e6b54f3867cfdcf0cb679e2fc0e0f62",
+                "reference": "951f82065e6b54f3867cfdcf0cb679e2fc0e0f62",
                 "shasum": ""
             },
             "require": {
@@ -424,7 +424,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-08-04T20:19:41+00:00"
+            "time": "2025-08-29T17:39:03+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -599,7 +599,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v12.26.4",
+            "version": "v12.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -708,7 +708,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v12.26.4",
+            "version": "v12.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -876,7 +876,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v12.26.4",
+            "version": "v12.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1007,7 +1007,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v12.26.4",
+            "version": "v12.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
