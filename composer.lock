@@ -533,7 +533,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v12.28.0",
+            "version": "v12.28.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -1007,7 +1007,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v12.28.0",
+            "version": "v12.28.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
