@@ -763,7 +763,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v12.30.1",
+            "version": "v12.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1007,16 +1007,16 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v12.30.1",
+            "version": "v12.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "d4fb567c5e62957d00809ef46f116dd124d51a93"
+                "reference": "32404b67f44de8177788a1acbef634298dc5ccab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/d4fb567c5e62957d00809ef46f116dd124d51a93",
-                "reference": "d4fb567c5e62957d00809ef46f116dd124d51a93",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/32404b67f44de8177788a1acbef634298dc5ccab",
+                "reference": "32404b67f44de8177788a1acbef634298dc5ccab",
                 "shasum": ""
             },
             "require": {
@@ -1057,7 +1057,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-09-07T23:06:00+00:00"
+            "time": "2025-09-19T15:33:35+00:00"
         },
         {
             "name": "laravel/prompts",
