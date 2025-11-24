@@ -4805,16 +4805,16 @@
         },
         {
             "name": "tightenco/jigsaw-docs-template",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/jigsaw-docs-template.git",
-                "reference": "d36fc8e444199931e1e127aa61f25aca1db0499d"
+                "reference": "61f326e29e9c837be1c0eb18310038a3b1a0d85a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/jigsaw-docs-template/zipball/d36fc8e444199931e1e127aa61f25aca1db0499d",
-                "reference": "d36fc8e444199931e1e127aa61f25aca1db0499d",
+                "url": "https://api.github.com/repos/tighten/jigsaw-docs-template/zipball/61f326e29e9c837be1c0eb18310038a3b1a0d85a",
+                "reference": "61f326e29e9c837be1c0eb18310038a3b1a0d85a",
                 "shasum": ""
             },
             "require": {
@@ -4858,9 +4858,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/jigsaw-docs-template/issues",
-                "source": "https://github.com/tighten/jigsaw-docs-template/tree/v1.2.1"
+                "source": "https://github.com/tighten/jigsaw-docs-template/tree/v1.2.2"
             },
-            "time": "2025-07-03T20:34:09+00:00"
+            "time": "2025-11-21T19:15:23+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
