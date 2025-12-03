@@ -593,16 +593,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v12.40.2",
+            "version": "v12.41.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "8cf759395964d5a6323887345d590e46f3aa4fbe"
+                "reference": "f7746a0b2e47d886238ac6527a39b254e5bd2f9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/8cf759395964d5a6323887345d590e46f3aa4fbe",
-                "reference": "8cf759395964d5a6323887345d590e46f3aa4fbe",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/f7746a0b2e47d886238ac6527a39b254e5bd2f9c",
+                "reference": "f7746a0b2e47d886238ac6527a39b254e5bd2f9c",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +655,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-11-26T14:30:36+00:00"
+            "time": "2025-11-27T22:28:23+00:00"
         },
         {
             "name": "illuminate/container",
