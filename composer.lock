@@ -435,16 +435,16 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "5db3f0f0b3b5a8fefee4598bfce99910f719d68d"
+                "reference": "4c79e1fd8c87efc4c5b202651472aa5325a171bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/5db3f0f0b3b5a8fefee4598bfce99910f719d68d",
-                "reference": "5db3f0f0b3b5a8fefee4598bfce99910f719d68d",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/4c79e1fd8c87efc4c5b202651472aa5325a171bd",
+                "reference": "4c79e1fd8c87efc4c5b202651472aa5325a171bd",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +484,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-12-10T15:25:42+00:00"
+            "time": "2026-01-04T17:18:13+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -594,16 +594,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "f7746a0b2e47d886238ac6527a39b254e5bd2f9c"
+                "reference": "1669d640823b86d11a0ca93fab68d07731542f13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/f7746a0b2e47d886238ac6527a39b254e5bd2f9c",
-                "reference": "f7746a0b2e47d886238ac6527a39b254e5bd2f9c",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/1669d640823b86d11a0ca93fab68d07731542f13",
+                "reference": "1669d640823b86d11a0ca93fab68d07731542f13",
                 "shasum": ""
             },
             "require": {
@@ -656,20 +656,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-11-27T22:28:23+00:00"
+            "time": "2026-01-04T17:15:59+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "326667a4c813e3ad5a645969a7e3f5c10d159de2"
+                "reference": "80f5d87499daaa1ab674ead4b0788325dc4b781e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/326667a4c813e3ad5a645969a7e3f5c10d159de2",
-                "reference": "326667a4c813e3ad5a645969a7e3f5c10d159de2",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/80f5d87499daaa1ab674ead4b0788325dc4b781e",
+                "reference": "80f5d87499daaa1ab674ead4b0788325dc4b781e",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-12-08T22:34:25+00:00"
+            "time": "2026-01-05T21:18:35+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -770,7 +770,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -938,7 +938,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1121,7 +1121,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v12.44.0",
+            "version": "v12.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -2959,16 +2959,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.4.1",
+            "version": "v7.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "6d9f0fbf2ec2e9785880096e3abd0ca0c88b506e"
+                "reference": "732a9ca6cd9dfd940c639062d5edbde2f6727fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/6d9f0fbf2ec2e9785880096e3abd0ca0c88b506e",
-                "reference": "6d9f0fbf2ec2e9785880096e3abd0ca0c88b506e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/732a9ca6cd9dfd940c639062d5edbde2f6727fb6",
+                "reference": "732a9ca6cd9dfd940c639062d5edbde2f6727fb6",
                 "shasum": ""
             },
             "require": {
@@ -3033,7 +3033,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.4.1"
+                "source": "https://github.com/symfony/console/tree/v7.4.3"
             },
             "funding": [
                 {
@@ -3053,7 +3053,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-05T15:23:39+00:00"
+            "time": "2025-12-23T14:50:43+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
