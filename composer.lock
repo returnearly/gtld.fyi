@@ -435,16 +435,16 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v12.49.0",
+            "version": "v12.50.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "34a5617fe40c90000751bd72bcc9ab9b012d9b41"
+                "reference": "e2100faf26fce579a954699d927ca77e3b5c2ad7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/34a5617fe40c90000751bd72bcc9ab9b012d9b41",
-                "reference": "34a5617fe40c90000751bd72bcc9ab9b012d9b41",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/e2100faf26fce579a954699d927ca77e3b5c2ad7",
+                "reference": "e2100faf26fce579a954699d927ca77e3b5c2ad7",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +484,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-01-20T15:12:10+00:00"
+            "time": "2026-01-28T15:18:32+00:00"
         },
         {
             "name": "illuminate/collections",
