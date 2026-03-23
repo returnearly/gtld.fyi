@@ -1,0 +1,65 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build & Verify
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+
+      - uses: ramsey/composer-install@v3
+        with:
+          composer-options: "--prefer-dist --optimize-autoloader"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: bahmutov/npm-install@v1
+
+      - name: Laravel Mix
+        run: npm run prod
+
+      - name: Run Jigsaw
+        run: ./vendor/bin/jigsaw build production
+
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+
+          # Core files must exist
+          for file in index.html sitemap.xml favicon.ico 404/index.html all/index.html; do
+            if [ ! -f "build_production/$file" ]; then
+              echo "FAIL: Missing expected file: $file"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+
+          # TLD pages must be generated (expect 1000+)
+          tld_count=$(find build_production/tld -name "index.html" | wc -l)
+          echo "Found $tld_count TLD pages"
+          if [ "$tld_count" -lt 1000 ]; then
+            echo "FAIL: Expected at least 1000 TLD pages, found $tld_count"
+            exit 1
+          fi
+          echo "OK: $tld_count TLD pages generated"
+
+          # CSS and JS assets must be present and non-empty
+          for asset in css/main.css js/main.js; do
+            if [ ! -s "build_production/assets/build/$asset" ]; then
+              echo "FAIL: Missing or empty asset: $asset"
+              exit 1
+            fi
+            echo "OK: assets/build/$asset"
+          done
+
+          echo "All checks passed!"
