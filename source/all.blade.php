@@ -1,36 +1,30 @@
 @extends('_layouts.master')
 
-@section('nav-toggle')
-@include('_nav.menu-toggle')
-@endsection
-
 @section('body')
-<section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
-    <div class="flex flex-col lg:flex-row">
-        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
-            @include('_nav.menu', ['items' => $page->navigation])
-        </nav>
+<section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl font-bold text-slate-900">All Generic Top-Level Domains</h1>
+    <p class="text-slate-600 mt-2 mb-8">
+        Every one of these {{ number_format($gtlds->count()) }} gTLDs is valid for use in email addresses.
+    </p>
 
-        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>List of all current Generic Top Level domains (gTLDs)</h1>
-
-            <div class="flex flex-wrap">
-                @foreach ($gtlds as $gtld)
-                <div class="w-full md:w-1/2 lg:w-1/3 p-2">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <div class="p-4">
-                            <div class="text-2xl font-bold text-gray-800">
-                                <a href="/tld/{{ $gtld->name }}">
-                                    {{ $gtld->name }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-
+    <div class="sticky top-0 z-10 bg-slate-50 py-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div class="flex items-center gap-4">
+            <input
+                type="text"
+                id="tld-filter"
+                placeholder="Filter TLDs..."
+                class="w-full max-w-sm rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+            >
+            <span id="tld-count" class="text-sm text-slate-500 whitespace-nowrap">{{ number_format($gtlds->count()) }} TLDs</span>
         </div>
+    </div>
+
+    <div id="tld-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-6">
+        @foreach ($gtlds as $gtld)
+        <a href="/tld/{{ $gtld->name }}" data-tld="{{ $gtld->name }}" class="block px-3 py-2 text-sm font-mono font-medium text-slate-700 hover:text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors">
+            .{{ $gtld->name }}
+        </a>
+        @endforeach
     </div>
 </section>
 @endsection

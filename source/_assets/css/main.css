@@ -1,3 +1,116 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+
+/* highlight.js dark theme for code blocks */
+@import 'highlight.js/styles/github-dark.css';
+
+/* ---- Base typography & elements ---- */
+
+body {
+    font-size: 17px;
+}
+
+a {
+    @apply font-medium no-underline text-indigo-700;
+}
+a:hover {
+    @apply text-indigo-900;
+}
+
+blockquote {
+    @apply border-indigo-300 border-l-4 font-normal italic my-8 pl-6 text-slate-600 text-lg;
+}
+
+code {
+    @apply bg-slate-100 px-1.5 py-0.5 rounded text-sm text-slate-800 font-mono;
+}
+
+code.hljs {
+    @apply bg-transparent p-0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply leading-tight mb-4 mt-8 text-slate-900;
+}
+h1:first-child, h2:first-child, h3:first-child,
+h4:first-child, h5:first-child, h6:first-child {
+    @apply mt-0;
+}
+
+h1 {
+    @apply font-extrabold text-4xl;
+}
+h2 {
+    @apply font-bold text-3xl;
+}
+h3 {
+    @apply font-bold text-2xl;
+}
+h4 {
+    @apply font-semibold text-xl;
+}
+h5 {
+    @apply font-semibold text-lg;
+}
+h6 {
+    @apply font-medium text-base;
+}
+
+hr {
+    @apply border-b border-slate-200 my-12 rounded-full;
+}
+
+li ul, li ol {
+    @apply my-0;
+}
+ol, ul {
+    @apply my-4;
+}
+ol {
+    @apply list-decimal;
+}
+
+p {
+    @apply my-3;
+}
+@media (min-width: 768px) {
+    p {
+        @apply my-4;
+    }
+}
+
+pre {
+    @apply bg-slate-800 leading-relaxed my-6 overflow-x-auto p-4 rounded-lg text-sm;
+}
+pre code {
+    @apply bg-transparent block p-0 text-slate-100;
+}
+
+::selection {
+    @apply bg-indigo-600 text-white;
+}
+
+/* ---- Tab component ---- */
+
+.tab-bar {
+    @apply flex flex-wrap gap-1 border-b border-slate-200 mb-0;
+}
+
+.tab-button {
+    @apply px-3 py-2 text-sm font-medium text-slate-500 rounded-t-lg border border-transparent cursor-pointer transition-colors duration-150;
+}
+.tab-button:hover {
+    @apply text-slate-700 bg-slate-50;
+}
+.tab-button.active {
+    @apply text-indigo-700 bg-white border-slate-200 border-b-white -mb-px;
+}
+
+.tab-panel {
+    @apply hidden;
+}
+.tab-panel.active {
+    @apply block;
+}
+
+@tailwind utilities;
