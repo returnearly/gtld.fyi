@@ -3,6 +3,7 @@
     "description": "The source for gTLD.fyi, a website to inform companies that their signup forms don't support gTLD domains for user accounts.",
     "type": "project",
     "require": {
+        "php": "^8.5",
         "tightenco/jigsaw": "^1.6",
         "tightenco/jigsaw-docs-template": "^1.1",
         "samdark/sitemap": "^2.2.1"
