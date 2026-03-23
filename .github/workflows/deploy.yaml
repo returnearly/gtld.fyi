@@ -21,6 +21,10 @@ jobs:
         with:
           composer-options: "--prefer-dist --optimize-autoloader"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - uses: bahmutov/npm-install@v1
 
       - name: Laravel Mix
