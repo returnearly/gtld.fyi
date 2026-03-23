@@ -58,32 +58,237 @@
 
             <h4>Language Specific Helpers</h4>
             <p>
-                Many languages have built-in methods for validating email addresses. These methods are usually the best way to validate email addresses as they are maintained by the core developers of the language and are kept up to date with the latest standards.
+                Many languages have built-in methods for validating email addresses. These methods are usually the best way to validate email addresses as they are maintained by the core developers of the language and are kept up to date with the latest standards. Avoid writing your own regular expression for email validation &mdash; it is almost always wrong and is the #1 cause of gTLD rejection.
             </p>
-            <ul class="list list-disc list-inside">
-                <li class="py-2">
-                    With HTML, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email" target="_blank"><code>type="email"</code></a> attribute on the <code>&lt;input&gt;</code> element to validate an email address on your website front-end.
-                </li>
-                <li class="py-2">
-                    In PHP, you can use the <a href="https://www.php.net/manual/en/function.filter-var.php" target="_blank"><code>filter_var()</code></a> method with the <code>FILTER_VALIDATE_EMAIL</code> filter to validate an email address.
-                </li>
-                <li class="py-2">
-                    In Ruby, you can use the built in <code>URI::MailTo::EMAIL_REGEXP</code> regular expression to validate an email address.
-                </li>
-                <li class="py-2">
-                    In Python, you can use <a href="https://docs.python.org/3/library/email.utils.html#email.utils.parseaddr" target="_blank">the built in <code>email.utils.parseaddr()</code> method</a> to validate an email address.
-                </li>
-                <li class="py-2">
-                    In JavaScript, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" target="_blank"><code>RegExp</code></a> object to validate an email address.
-                </li>
-            </ul>
+
+            <h5>HTML</h5>
+            <p>
+                Use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email" target="_blank"><code>type="email"</code></a> attribute on the <code>&lt;input&gt;</code> element. The browser validates against the RFC 5322 spec and accepts all valid TLDs.
+            </p>
+            <pre><code>&lt;input type="email" name="email" required&gt;</code></pre>
+
+            <h5>PHP</h5>
+            <p>
+                Use the <a href="https://www.php.net/manual/en/function.filter-var.php" target="_blank"><code>filter_var()</code></a> function with the <code>FILTER_VALIDATE_EMAIL</code> filter. This follows the RFC spec and does not restrict TLD length or format.
+            </p>
+            <pre><code>$valid = filter_var($email, FILTER_VALIDATE_EMAIL) !== false;</code></pre>
+
+            <h5>Python</h5>
+            <p>
+                Use the <a href="https://pypi.org/project/email-validator/" target="_blank"><code>email-validator</code></a> package for robust validation that checks syntax and optionally verifies DNS. For basic parsing, the standard library's <a href="https://docs.python.org/3/library/email.utils.html#email.utils.parseaddr" target="_blank"><code>email.utils.parseaddr()</code></a> works but does not validate deliverability.
+            </p>
+            <pre><code>from email_validator import validate_email
+result = validate_email("user@example.{{ $page->name }}")</code></pre>
+
+            <h5>JavaScript / TypeScript</h5>
+            <p>
+                Avoid writing a custom regex. Use the browser's built-in <code>&lt;input type="email"&gt;</code> constraint validation API, or on the server side use a well-maintained library like <a href="https://www.npmjs.com/package/validator" target="_blank"><code>validator.js</code></a>.
+            </p>
+            <pre><code>import validator from 'validator';
+validator.isEmail('user@example.{{ $page->name }}'); // true</code></pre>
+
+            <h5>Ruby</h5>
+            <p>
+                Use the built-in <code>URI::MailTo::EMAIL_REGEXP</code> constant which follows the RFC spec and accepts all valid TLDs.
+            </p>
+            <pre><code>valid = email.match?(URI::MailTo::EMAIL_REGEXP)</code></pre>
+
+            <h5>Java</h5>
+            <p>
+                Use the <code>jakarta.mail.internet.InternetAddress</code> class (or <code>javax.mail</code> in older versions) which parses per RFC 822. Alternatively, use the Bean Validation <code>@Email</code> annotation from Hibernate Validator.
+            </p>
+            <pre><code>import jakarta.mail.internet.InternetAddress;
+InternetAddress addr = new InternetAddress(email);
+addr.validate();</code></pre>
+
+            <h5>C# / .NET</h5>
+            <p>
+                Use <code>System.Net.Mail.MailAddress</code> which parses email addresses per RFC spec, or use the <code>[EmailAddress]</code> data annotation for model validation.
+            </p>
+            <pre><code>try {
+    var addr = new System.Net.Mail.MailAddress(email);
+    bool valid = addr.Address == email;
+} catch (FormatException) {
+    // invalid
+}</code></pre>
+
+            <h5>Go</h5>
+            <p>
+                Use the standard library's <a href="https://pkg.go.dev/net/mail#ParseAddress" target="_blank"><code>net/mail.ParseAddress()</code></a> function which parses addresses per RFC 5322.
+            </p>
+            <pre><code>import "net/mail"
+_, err := mail.ParseAddress(email)
+valid := err == nil</code></pre>
+
+            <h5>Swift</h5>
+            <p>
+                Use <code>NSDataDetector</code> with the <code>.link</code> checking type to detect valid email addresses without restrictive regex patterns.
+            </p>
+            <pre><code>import Foundation
+let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+let range = NSRange(email.startIndex..&lt;email.endIndex, in: email)
+let match = detector.firstMatch(in: email, options: [], range: range)
+let valid = match?.url?.scheme == "mailto"</code></pre>
+
+            <h5>Kotlin</h5>
+            <p>
+                Use the <code>android.util.Patterns.EMAIL_ADDRESS</code> pattern on Android, or on the JVM use the same <code>jakarta.mail.internet.InternetAddress</code> approach as Java.
+            </p>
+            <pre><code>// Android
+val valid = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+
+// JVM
+val addr = jakarta.mail.internet.InternetAddress(email)
+addr.validate()</code></pre>
+
+            <h5>Rust</h5>
+            <p>
+                Use the <a href="https://crates.io/crates/email_address" target="_blank"><code>email_address</code></a> crate which validates against RFC 5321.
+            </p>
+            <pre><code>use email_address::EmailAddress;
+let valid = EmailAddress::is_valid("user@example.{{ $page->name }}");</code></pre>
+
+            <h5>Elixir</h5>
+            <p>
+                Use the built-in <code>Email</code> changeset validation or the <a href="https://hex.pm/packages/email_checker" target="_blank"><code>email_checker</code></a> package.
+            </p>
+            <pre><code># Ecto changeset
+validate_format(changeset, :email, ~r/^[^\s]+@[^\s]+\.[^\s]+$/)</code></pre>
 
             <h4>Framework Specific Helpers</h4>
-            <ul class="list list-inside list-disc">
-                <li class="py-2">
-                    In Laravel, you can use the <a href="https://laravel.com/docs/master/validation#rule-email" target="_blank"><code>email</code></a> validation rule to validate an email address.
-                </li>
-            </ul>
+
+            <h5>Laravel (PHP)</h5>
+            <p>
+                Use the <a href="https://laravel.com/docs/master/validation#rule-email" target="_blank"><code>email</code></a> validation rule. The <code>dns</code> and <code>rfc</code> options provide additional checks.
+            </p>
+            <pre><code>$request->validate([
+    'email' => 'required|email:rfc,dns',
+]);</code></pre>
+
+            <h5>Symfony (PHP)</h5>
+            <p>
+                Use the <a href="https://symfony.com/doc/current/reference/constraints/Email.html" target="_blank"><code>Email</code></a> constraint with the desired validation mode.
+            </p>
+            <pre><code>use Symfony\Component\Validator\Constraints as Assert;
+
+#[Assert\Email(mode: 'strict')]
+private string $email;</code></pre>
+
+            <h5>Django (Python)</h5>
+            <p>
+                Use the built-in <a href="https://docs.djangoproject.com/en/stable/ref/validators/#emailvalidator" target="_blank"><code>EmailValidator</code></a> or the <code>EmailField</code> on forms and models. Both follow the RFC spec.
+            </p>
+            <pre><code># In a model
+from django.db import models
+email = models.EmailField()
+
+# In a form
+from django.core.validators import validate_email
+validate_email('user@example.{{ $page->name }}')</code></pre>
+
+            <h5>Flask / WTForms (Python)</h5>
+            <p>
+                Use the <code>Email</code> validator from WTForms which checks RFC compliance.
+            </p>
+            <pre><code>from wtforms import StringField
+from wtforms.validators import Email
+
+class MyForm(FlaskForm):
+    email = StringField('Email', validators=[Email()])</code></pre>
+
+            <h5>Ruby on Rails</h5>
+            <p>
+                Use the built-in <code>URI::MailTo::EMAIL_REGEXP</code> with a model validation.
+            </p>
+            <pre><code>class User &lt; ApplicationRecord
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+end</code></pre>
+
+            <h5>Spring Boot (Java)</h5>
+            <p>
+                Use the <code>@Email</code> annotation from Jakarta Bean Validation (Hibernate Validator).
+            </p>
+            <pre><code>import jakarta.validation.constraints.Email;
+
+public class UserDTO {
+    @Email
+    private String email;
+}</code></pre>
+
+            <h5>ASP.NET (C#)</h5>
+            <p>
+                Use the <code>[EmailAddress]</code> data annotation on your model properties.
+            </p>
+            <pre><code>using System.ComponentModel.DataAnnotations;
+
+public class UserModel {
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
+}</code></pre>
+
+            <h5>Express.js / Node.js</h5>
+            <p>
+                Use <a href="https://express-validator.github.io/" target="_blank"><code>express-validator</code></a> which wraps <code>validator.js</code> for RFC-compliant email checks.
+            </p>
+            <pre><code>import { body } from 'express-validator';
+
+app.post('/register',
+  body('email').isEmail(),
+  (req, res) => { /* ... */ }
+);</code></pre>
+
+            <h5>Angular</h5>
+            <p>
+                Use the built-in <code>Validators.email</code> which follows the same spec as the HTML5 <code>type="email"</code> input.
+            </p>
+            <pre><code>import { Validators } from '@angular/forms';
+
+this.form = this.fb.group({
+  email: ['', [Validators.required, Validators.email]]
+});</code></pre>
+
+            <h5>Phoenix (Elixir)</h5>
+            <p>
+                Use Ecto changeset validations to check email format.
+            </p>
+            <pre><code>def changeset(user, attrs) do
+  user
+  |> cast(attrs, [:email])
+  |> validate_required([:email])
+  |> validate_format(:email, ~r/^[^\s]+@[^\s]+\.[^\s]+$/)
+end</code></pre>
+
+            <h5>Next.js / React</h5>
+            <p>
+                Use the native HTML5 email input for client-side validation. For server-side validation in API routes, use <code>validator.js</code>.
+            </p>
+            <pre><code>// Client-side (React component)
+&lt;input type="email" name="email" required /&gt;
+
+// Server-side (API route)
+import validator from 'validator';
+if (!validator.isEmail(req.body.email)) {
+  return res.status(400).json({ error: 'Invalid email' });
+}</code></pre>
+
+            <h5>Vue.js (Vuelidate)</h5>
+            <p>
+                Use the <a href="https://vuelidate-next.netlify.app/" target="_blank"><code>Vuelidate</code></a> library's built-in email validator.
+            </p>
+            <pre><code>import { required, email } from '@vuelidate/validators';
+
+const rules = {
+  email: { required, email }
+};</code></pre>
+
+            <h5>Gin (Go)</h5>
+            <p>
+                Use the <code>binding:"email"</code> struct tag which validates email format using the <code>go-playground/validator</code> package.
+            </p>
+            <pre><code>type RegisterInput struct {
+    Email string `json:"email" binding:"required,email"`
+}</code></pre>
         </div>
     </div>
 </section>
