@@ -37,8 +37,8 @@ jobs:
           DOCSEARCH_KEY: ${{ secrets.DOCSEARCH_KEY }}
 
       - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages publish --project-name=gtld-fyi ./build_production
+          command: pages deploy --project-name=gtld-fyi ./build_production
