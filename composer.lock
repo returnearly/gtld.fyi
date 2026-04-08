@@ -593,7 +593,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v13.3.0",
+            "version": "v13.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -1059,16 +1059,16 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v13.3.0",
+            "version": "v13.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
-                "reference": "f52d6aa57be3d4364c3823291406f6939849d211"
+                "reference": "36b82272ee2148f720d835b2bd69369055d64f1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/f52d6aa57be3d4364c3823291406f6939849d211",
-                "reference": "f52d6aa57be3d4364c3823291406f6939849d211",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/36b82272ee2148f720d835b2bd69369055d64f1b",
+                "reference": "36b82272ee2148f720d835b2bd69369055d64f1b",
                 "shasum": ""
             },
             "require": {
@@ -1122,7 +1122,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-03-30T22:02:57+00:00"
+            "time": "2026-04-07T13:31:17+00:00"
         },
         {
             "name": "illuminate/reflection",
