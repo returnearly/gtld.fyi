@@ -1675,16 +1675,16 @@
         },
         {
             "name": "mnapoli/front-yaml",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mnapoli/FrontYAML.git",
-                "reference": "ac323ae2adf75515a9941a86821737ad29696b46"
+                "reference": "f4f96c79dad99f2c9515d8403be29d93699d7522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mnapoli/FrontYAML/zipball/ac323ae2adf75515a9941a86821737ad29696b46",
-                "reference": "ac323ae2adf75515a9941a86821737ad29696b46",
+                "url": "https://api.github.com/repos/mnapoli/FrontYAML/zipball/f4f96c79dad99f2c9515d8403be29d93699d7522",
+                "reference": "f4f96c79dad99f2c9515d8403be29d93699d7522",
                 "shasum": ""
             },
             "require": {
@@ -1705,10 +1705,11 @@
             "license": [
                 "MIT"
             ],
+            "description": "YAML Front matter parser",
             "support": {
-                "source": "https://github.com/mnapoli/FrontYAML/tree/2.0.5"
+                "source": "https://github.com/mnapoli/FrontYAML/tree/2.0.6"
             },
-            "time": "2025-11-23T17:09:52+00:00"
+            "time": "2026-04-08T20:59:25+00:00"
         },
         {
             "name": "nesbot/carbon",
