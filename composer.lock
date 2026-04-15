@@ -1059,16 +1059,16 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v13.4.0",
+            "version": "v13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
-                "reference": "36b82272ee2148f720d835b2bd69369055d64f1b"
+                "reference": "20b9c77e50f9ed17aa8358aa8abcbe8ad27205a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/36b82272ee2148f720d835b2bd69369055d64f1b",
-                "reference": "36b82272ee2148f720d835b2bd69369055d64f1b",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/20b9c77e50f9ed17aa8358aa8abcbe8ad27205a9",
+                "reference": "20b9c77e50f9ed17aa8358aa8abcbe8ad27205a9",
                 "shasum": ""
             },
             "require": {
@@ -1122,7 +1122,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-04-07T13:31:17+00:00"
+            "time": "2026-04-12T17:42:02+00:00"
         },
         {
             "name": "illuminate/reflection",
