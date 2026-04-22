@@ -488,16 +488,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "389c5008087f8c48d35b85585b4315107b5a0f9e"
+                "reference": "8337eab46f512633d36df6b2f0ee54bf309c1da1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/389c5008087f8c48d35b85585b4315107b5a0f9e",
-                "reference": "389c5008087f8c48d35b85585b4315107b5a0f9e",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/8337eab46f512633d36df6b2f0ee54bf309c1da1",
+                "reference": "8337eab46f512633d36df6b2f0ee54bf309c1da1",
                 "shasum": ""
             },
             "require": {
@@ -543,11 +543,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-03-30T19:06:46+00:00"
+            "time": "2026-04-18T13:28:59+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -658,7 +658,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -720,7 +720,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -768,16 +768,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "81fe98d74e7d410b5f3e246c6c01bd6f73906a79"
+                "reference": "1105fae69e8856a202bd1b4efd88b92057ade21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/81fe98d74e7d410b5f3e246c6c01bd6f73906a79",
-                "reference": "81fe98d74e7d410b5f3e246c6c01bd6f73906a79",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/1105fae69e8856a202bd1b4efd88b92057ade21a",
+                "reference": "1105fae69e8856a202bd1b4efd88b92057ade21a",
                 "shasum": ""
             },
             "require": {
@@ -835,7 +835,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-04-14T13:33:14+00:00"
+            "time": "2026-04-20T13:06:04+00:00"
         },
         {
             "name": "illuminate/events",
@@ -961,7 +961,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1126,7 +1126,7 @@
         },
         {
             "name": "illuminate/reflection",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/reflection.git",
@@ -1177,16 +1177,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v13.5.0",
+            "version": "v13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "0e8642a79d385c644a75400cad176b042242c894"
+                "reference": "5394e4b6008175f5a42c1227b5c4b959aa1be963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/0e8642a79d385c644a75400cad176b042242c894",
-                "reference": "0e8642a79d385c644a75400cad176b042242c894",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/5394e4b6008175f5a42c1227b5c4b959aa1be963",
+                "reference": "5394e4b6008175f5a42c1227b5c4b959aa1be963",
                 "shasum": ""
             },
             "require": {
@@ -1252,7 +1252,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-04-13T14:52:53+00:00"
+            "time": "2026-04-20T13:42:58+00:00"
         },
         {
             "name": "illuminate/view",
