@@ -721,16 +721,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "ce6f5561f88743639c76835ad82cfe39b468bdc8"
+                "reference": "71dba8668753f7c6ea862bc4258eba6513b592ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/ce6f5561f88743639c76835ad82cfe39b468bdc8",
-                "reference": "ce6f5561f88743639c76835ad82cfe39b468bdc8",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/71dba8668753f7c6ea862bc4258eba6513b592ec",
+                "reference": "71dba8668753f7c6ea862bc4258eba6513b592ec",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +765,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-04-28T17:16:27+00:00"
+            "time": "2026-05-06T18:50:26+00:00"
         },
         {
             "name": "illuminate/database",
