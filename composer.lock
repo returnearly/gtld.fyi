@@ -435,7 +435,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -842,7 +842,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -897,7 +897,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1010,7 +1010,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1259,16 +1259,16 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v13.8.0",
+            "version": "v13.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "3eb161912c82807af60bf6c2f672c5e2b81ac65a"
+                "reference": "37f8cb32c72e8c435698f5be186c5ad2263f5834"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/3eb161912c82807af60bf6c2f672c5e2b81ac65a",
-                "reference": "3eb161912c82807af60bf6c2f672c5e2b81ac65a",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/37f8cb32c72e8c435698f5be186c5ad2263f5834",
+                "reference": "37f8cb32c72e8c435698f5be186c5ad2263f5834",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1309,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-04-28T11:51:23+00:00"
+            "time": "2026-05-06T13:46:25+00:00"
         },
         {
             "name": "laravel/prompts",
