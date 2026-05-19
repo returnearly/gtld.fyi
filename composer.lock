@@ -435,7 +435,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -1011,7 +1011,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1130,7 +1130,7 @@
         },
         {
             "name": "illuminate/reflection",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/reflection.git",
@@ -1181,16 +1181,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "3367c25b040788835fd043fbddb64bd5af659ec6"
+                "reference": "8aaaa17028851d410cd2f1489cecc921663e58d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/3367c25b040788835fd043fbddb64bd5af659ec6",
-                "reference": "3367c25b040788835fd043fbddb64bd5af659ec6",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/8aaaa17028851d410cd2f1489cecc921663e58d5",
+                "reference": "8aaaa17028851d410cd2f1489cecc921663e58d5",
                 "shasum": ""
             },
             "require": {
@@ -1256,7 +1256,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-05-10T15:47:41+00:00"
+            "time": "2026-05-19T16:59:44+00:00"
         },
         {
             "name": "illuminate/view",
