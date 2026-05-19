@@ -660,16 +660,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "71daf6ee3788e6930e7eb8454d840f1ccfd6a313"
+                "reference": "be0ad39a3abf4d9a498952e58908c5d6da0f5ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/71daf6ee3788e6930e7eb8454d840f1ccfd6a313",
-                "reference": "71daf6ee3788e6930e7eb8454d840f1ccfd6a313",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/be0ad39a3abf4d9a498952e58908c5d6da0f5ede",
+                "reference": "be0ad39a3abf4d9a498952e58908c5d6da0f5ede",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-05-05T20:55:51+00:00"
+            "time": "2026-05-13T13:58:52+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -770,16 +770,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v13.9.0",
+            "version": "v13.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "c0f1b78ed5e4cbdad0744181050aa689c477124f"
+                "reference": "ef9e28bf483b7af14d3229d0dc6ad0c868fa6afb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/c0f1b78ed5e4cbdad0744181050aa689c477124f",
-                "reference": "c0f1b78ed5e4cbdad0744181050aa689c477124f",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/ef9e28bf483b7af14d3229d0dc6ad0c868fa6afb",
+                "reference": "ef9e28bf483b7af14d3229d0dc6ad0c868fa6afb",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +839,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-05-10T15:49:54+00:00"
+            "time": "2026-05-19T13:20:43+00:00"
         },
         {
             "name": "illuminate/events",
