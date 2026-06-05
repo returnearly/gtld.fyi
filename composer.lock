@@ -435,7 +435,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v13.13.0",
+            "version": "v13.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -594,16 +594,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v13.13.0",
+            "version": "v13.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "b378f36cb1cf4d4611228f07921446f2c3e36708"
+                "reference": "5167a191899bc1169ebfb13ff0e1382b872dd1d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/b378f36cb1cf4d4611228f07921446f2c3e36708",
-                "reference": "b378f36cb1cf4d4611228f07921446f2c3e36708",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/5167a191899bc1169ebfb13ff0e1382b872dd1d0",
+                "reference": "5167a191899bc1169ebfb13ff0e1382b872dd1d0",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +656,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-05-29T00:07:35+00:00"
+            "time": "2026-06-02T01:42:34+00:00"
         },
         {
             "name": "illuminate/container",
@@ -843,7 +843,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v13.13.0",
+            "version": "v13.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1260,7 +1260,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v13.13.0",
+            "version": "v13.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
