@@ -434,7 +434,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -593,16 +593,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "473df3f2e9f3b602c748db2a9b328d71a364ccec"
+                "reference": "c2334ea3ef8398089bd2d0f1fdf2715fd40c14b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/473df3f2e9f3b602c748db2a9b328d71a364ccec",
-                "reference": "473df3f2e9f3b602c748db2a9b328d71a364ccec",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/c2334ea3ef8398089bd2d0f1fdf2715fd40c14b3",
+                "reference": "c2334ea3ef8398089bd2d0f1fdf2715fd40c14b3",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +655,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-06-28T17:26:35+00:00"
+            "time": "2026-06-30T14:06:28+00:00"
         },
         {
             "name": "illuminate/container",
@@ -769,7 +769,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -842,7 +842,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1010,7 +1010,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1062,7 +1062,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -1259,7 +1259,7 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v13.18.0",
+            "version": "v13.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
