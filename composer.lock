@@ -777,16 +777,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v13.34.0",
+            "version": "v13.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "0f583d02d307c6abef06a94a0ae4684f4fee04a6"
+                "reference": "576d4f1679bd754ce038f4147a079bfc96c68aa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/0f583d02d307c6abef06a94a0ae4684f4fee04a6",
-                "reference": "0f583d02d307c6abef06a94a0ae4684f4fee04a6",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/576d4f1679bd754ce038f4147a079bfc96c68aa2",
+                "reference": "576d4f1679bd754ce038f4147a079bfc96c68aa2",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +847,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-09-28T17:52:48+00:00"
+            "time": "2026-10-05T15:55:08+00:00"
         },
         {
             "name": "illuminate/events",
@@ -1075,16 +1075,16 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v13.34.0",
+            "version": "v13.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
-                "reference": "438ec82fbb86883743e0bb55d64f36dc615ec227"
+                "reference": "adf76afd73a9c8404542579a5b1af0c7870e1f18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/438ec82fbb86883743e0bb55d64f36dc615ec227",
-                "reference": "438ec82fbb86883743e0bb55d64f36dc615ec227",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/adf76afd73a9c8404542579a5b1af0c7870e1f18",
+                "reference": "adf76afd73a9c8404542579a5b1af0c7870e1f18",
                 "shasum": ""
             },
             "require": {
@@ -1139,7 +1139,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-09-28T01:17:23+00:00"
+            "time": "2026-10-02T16:34:58+00:00"
         },
         {
             "name": "illuminate/reflection",
